@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 d-flex flex-column gap-4">
+      <lista-productos (productoSeleccionado)="onProductoSeleccionado($event)" titulo="Comida" [productos]="arrComida"></lista-productos>
+      <lista-productos (productoSeleccionado)="onProductoSeleccionado($event)" titulo="Bebida" [productos]="arrBebida"></lista-productos>
+    </div>
+    <div class="col-4">
+      <comanda [productos]="arrSeleccionados"></comanda>
+    </div>
+  </div>
+</div>

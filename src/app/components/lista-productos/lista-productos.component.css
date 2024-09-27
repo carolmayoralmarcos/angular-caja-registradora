@@ -1,0 +1,25 @@
+.lista-productos {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    width: 150px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.imagen {
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}

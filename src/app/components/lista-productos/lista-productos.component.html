@@ -1,0 +1,18 @@
+<div class="lista-productos">
+    <h3>{{titulo}}</h3>
+    <div class="productos">
+        @for(prod of productos; track $index){
+        <div class="producto" (click)="onClick(prod)">
+            @if (prod.oferta) {
+            <span class="badge bg-success">OFERTA</span>
+            }
+            <h5>{{prod.nombre}}</h5>
+            <div class="imagen" [style]="{
+                backgroundImage: 'url('+ prod.imagen +')'
+            }"></div>
+            <!-- <img [src]="prod.imagen" [alt]="prod.nombre"> -->
+            <span>{{prod.precio}}</span>
+        </div>
+        }
+    </div>
+</div>

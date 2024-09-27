@@ -1,0 +1,9 @@
+<ul>
+    @for(prod of productos; track $index){
+    <li>
+        {{prod.nombre}} x {{prod.unidades}}uds = {{prod.precio * prod.unidades!}}€
+        <button class="btn btn-danger" (click)="onClickBorrar($index)">Borrar</button>
+    </li>
+    }
+    <p>TOTAL: {{calcularTotalV2() | number:'10.2-2'}}</p>
+</ul>
